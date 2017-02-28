@@ -27,6 +27,8 @@ import com.vstechlab.easyfonts.EasyFonts;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -176,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
         fooBtn.setTypeface(EasyFonts.caviarDreamsBold(this));
 
 
+        populateEvents();
 
     }
 
@@ -202,5 +205,69 @@ public class MainActivity extends AppCompatActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    ArrayList<Events> eventsArrayList = new ArrayList<>();
+    void populateEvents()
+    {
+        Events event = new Events();
+        event.setEventTitle("Engagement/Ashirbad");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Mehendi");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Aiburobhat");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Gaye Holud");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Bibaho");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Bashor");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Bidhai");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Kalratri Boron");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Bhat Kapor");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Boubhat");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Reception Party");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Suhaag Raat");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Dwiragamon");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Asthamangala");
+        eventsArrayList.add(event);
+
+        event = new Events();
+        event.setEventTitle("Honeymoon");
+        eventsArrayList.add(event);
     }
 }
