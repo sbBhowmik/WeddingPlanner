@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             ab.setHomeButtonEnabled(true);
             ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#e6f2ff")));
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.hamburger_icon_purple);
-            Spannable text = new SpannableString(ab.getTitle());
+            Spannable text = new SpannableString("WEDDING PLANNER");
             text.setSpan(new ForegroundColorSpan(Color.parseColor("#9966ff")), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 
             Typeface font  = EasyFonts.caviarDreamsBold(this);
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
                                     int position, long id) {
                 switch (position) {
                     case 0:
-                        mDrawerToggle.setAnimateEnabled(false);
-                        drawerArrow.setProgress(1f);
+                        Intent i = new Intent(MainActivity.this, EventsActivity.class);
+                        MainActivity.this.startActivity(i);
                         break;
                     case 1:
                         mDrawerToggle.setAnimateEnabled(false);
@@ -164,6 +164,13 @@ public class MainActivity extends AppCompatActivity {
 
         Button eventsBtn = (Button)findViewById(R.id.eventsBtn);
         eventsBtn.setTypeface(EasyFonts.caviarDreamsBold(this));
+        eventsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, EventsActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
 
         Button shoppBtn = (Button)findViewById(R.id.shoppBtn);
         shoppBtn.setTypeface(EasyFonts.caviarDreamsBold(this));

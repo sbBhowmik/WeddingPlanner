@@ -45,7 +45,7 @@
                         android:shadowRadius="5"
                         android:shadowDy="2.0"
                         android:shadowDx="2.0"
-                        android:textColor="#ffffff"
+                        android:textColor="#e6f2ff"
                         />
 
                     <Button
@@ -58,7 +58,6 @@
                         android:textSize="17sp"
                         android:textColor="#ffffff"
                         android:textStyle="bold"
-                        android:layout_marginTop="20dp"
                         android:padding="10dp"
                         android:layout_below="@+id/titleText"
                         />
