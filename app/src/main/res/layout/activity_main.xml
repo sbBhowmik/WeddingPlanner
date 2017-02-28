@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rupik.weddingplanner.MainActivity"
+    android:background="@drawable/white_flower_bg"
+    >
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0071a1ed"
+        android:layout_marginBottom="44dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Why Spend Money On Wedding Planners When You Have A Perfect Planner At Your Fingertips"
+                        android:padding="30dp"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="5"
+                        android:shadowDy="2.0"
+                        android:shadowDx="2.0"
+                        android:textColor="#ffffff"
+                        />
+
+                    <Button
+                        android:id="@+id/eventsBtn"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_bg"
+                        android:text="Events"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_below="@+id/titleText"
+                        />
+
+                    <Button
+                        android:id="@+id/shoppBtn"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_bg"
+                        android:text="Shopping List"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_below="@id/eventsBtn"
+                        />
+
+                    <Button
+                        android:id="@+id/cardDesignBtn"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_bg"
+                        android:text="Card Design"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_below="@id/shoppBtn"
+                        />
+
+                    <Button
+                        android:id="@+id/guestListBtn"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_bg"
+                        android:text="Guest List"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_below="@id/cardDesignBtn"
+                        />
+
+                    <Button
+                        android:id="@+id/fooBtn"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_bg"
+                        android:text="Food Menu"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_below="@id/guestListBtn"
+                        />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+
+        <!-- The navigation drawer -->
+        <ListView
+            android:id="@+id/navdrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/white_rose_bg"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false">
+        </ListView>
+
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
