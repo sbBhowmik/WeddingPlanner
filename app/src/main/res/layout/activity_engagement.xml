@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_engagement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rupik.weddingplanner.EngagementActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="44dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/engagementTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On an auspicious day the elders of the groom's side go to bless the bride and vice versa, by sprinkling husked rice and trefoil on their heads and giving them gold ornaments. It is a kind of acceptance of the boy and the girl on both sides."
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/engagementFoodMenuBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/engagementTextView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_bg"
+            android:text="Food Menu"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            />
+
+            <Button
+                android:id="@+id/engagementShoppingListBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/engagementFoodMenuBtn"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_bg"
+                android:text="Shopping List"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

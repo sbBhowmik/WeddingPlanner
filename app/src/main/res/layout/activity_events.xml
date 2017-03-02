@@ -4,7 +4,7 @@
     android:id="@+id/activity_events"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
+
     tools:context="com.rupik.weddingplanner.EventsActivity"
     android:background="@drawable/cake_bg"
     >
@@ -35,260 +35,354 @@
                 android:textColor="#e6f2ff"
                 />
 
-            <Button
-                android:id="@+id/eventEngagementBtn"
-                android:layout_width="250dp"
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Engagement / Ashirbad"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@+id/titleText"
-                />
+                android:layout_below="@+id/titleText">
 
-            <Button
-                android:id="@+id/mehendiBtn"
-                android:layout_width="250dp"
+                <Button
+                    android:id="@+id/eventEngagementBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Engagement / Ashirbad"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/titleText"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/mehendiBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Mehendi"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/eventEngagementBtn"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Mehendi"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                android:layout_below="@+id/layout1">
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/eventEngagementBtn"
-                />
+                <Button
+                    android:id="@+id/sangeetBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Sangeet"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
 
-            <Button
-                android:id="@+id/sangeetBtn"
-                android:layout_width="250dp"
+                <Button
+                    android:id="@+id/AiburobhatBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Aiburobhat"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/sangeetBtn"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Sangeet"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                android:layout_below="@+id/layout2"
+                >
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/mehendiBtn"
-                />
+                <Button
+                    android:id="@+id/GayeHoludBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Gaye Holud"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/layout2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
 
-            <Button
-                android:id="@+id/AiburobhatBtn"
-                android:layout_width="250dp"
+                <Button
+                    android:id="@+id/BiyeBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Biye"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/GayeHoludBtn"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Aiburobhat"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                android:layout_below="@+id/layout3">
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/sangeetBtn"
-                />
+                <Button
+                    android:id="@+id/BashorBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Bashor"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
 
-            <Button
-                android:id="@+id/GayeHoludBtn"
-                android:layout_width="250dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/layout3"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/VidaiBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Vidai"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/BashorBtn"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Gaye Holud"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                android:layout_below="@+id/layout4">
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/AiburobhatBtn"
-                />
+                <Button
+                    android:id="@+id/KalratriBoronBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Kalratri Boron"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/layout4"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
 
-            <Button
-                android:id="@+id/BiyeBtn"
-                android:layout_width="250dp"
+                <Button
+                    android:id="@+id/BoubhatBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Bhat Kapor / Boubhat"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/KalratriBoronBtn"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/layout6"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/layout5">
+
+               <Button
+                   android:id="@+id/ReceptionPartyBtn"
+                   android:layout_width="250dp"
+                   android:layout_height="70dp"
+                   android:layout_centerHorizontal="true"
+                   android:background="@drawable/text_bg"
+                   android:text="Reception Party"
+                   android:textSize="17sp"
+                   android:textColor="#ffffff"
+                   android:layout_weight="0.5"
+                   android:textStyle="bold"
+                   android:layout_marginTop="20dp"
+                   android:padding="10dp"
+                   android:layout_below="@id/layout5"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   />
+
+               <Button
+                   android:id="@+id/GroomReceptionPartyBtn"
+                   android:layout_width="250dp"
+                   android:layout_height="70dp"
+                   android:layout_centerHorizontal="true"
+                   android:background="@drawable/text_bg"
+                   android:text="Groom's Reception Party"
+                   android:textSize="17sp"
+                   android:textColor="#ffffff"
+                   android:layout_weight="0.5"
+                   android:textStyle="bold"
+                   android:layout_marginTop="20dp"
+                   android:padding="10dp"
+                   android:layout_below="@id/ReceptionPartyBtn"
+                   android:layout_marginRight="10dp"
+                   />
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Biye"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                android:layout_below="@+id/layout6">
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/GayeHoludBtn"
-                />
+                <Button
+                    android:id="@+id/SuhagraatBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Suhagraat"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/layout6"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
 
-            <Button
-                android:id="@+id/BashorBtn"
-                android:layout_width="250dp"
+                <Button
+                    android:id="@+id/DwiragamanBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Dwiragaman"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/SuhagraatBtn"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout8"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Bashor"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                android:layout_below="@+id/layout7">
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/BiyeBtn"
-                />
+                <Button
+                    android:id="@+id/AshtamangalaBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Ashtamangala"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/layout7"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
 
-            <Button
-                android:id="@+id/VidaiBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Vidai"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
+                <Button
+                    android:id="@+id/HoneymoonBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/text_bg"
+                    android:text="Honeymoon"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_below="@id/AshtamangalaBtn"
+                    android:layout_marginRight="10dp"
+                    />
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/BashorBtn"
-                />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/KalratriBoronBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Kalratri Boron"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
 
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/VidaiBtn"
-                />
-
-            <Button
-                android:id="@+id/BoubhatBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Bhat Kapor / Boubhat"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/KalratriBoronBtn"
-                />
-
-            <Button
-                android:id="@+id/ReceptionPartyBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Reception Party"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/BoubhatBtn"
-                />
-
-            <Button
-                android:id="@+id/GroomReceptionPartyBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Groom's Reception Party"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/ReceptionPartyBtn"
-                />
-
-            <Button
-                android:id="@+id/SuhagraatBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Suhagraat"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/GroomReceptionPartyBtn"
-                />
-
-            <Button
-                android:id="@+id/DwiragamanBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Dwiragaman"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/SuhagraatBtn"
-                />
-
-            <Button
-                android:id="@+id/AshtamangalaBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Ashtamangala"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/DwiragamanBtn"
-                />
-
-            <Button
-                android:id="@+id/HoneymoonBtn"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/text_bg"
-                android:text="Honeymoon"
-                android:textSize="17sp"
-                android:textColor="#ffffff"
-
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_below="@id/AshtamangalaBtn"
-                />
 
 
         </RelativeLayout>
